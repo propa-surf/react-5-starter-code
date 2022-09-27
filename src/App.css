@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+.frontend-dev,
+.backend-dev,
+.all-button {
+  border: none;
+  border-radius: 3px;
+  margin: 3px;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+.frontend-dev {
+  background-color: pink;
+  
+}
+.backend-dev {
+  background-color: rgb(34, 34, 108);
+  color: white;
+}
+.title {
+  color: hotpink;
+  text-align: center;
+}
+.input-container{
+  margin-top:20px;
+}
+.filter-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 20px auto;
+}
+.filter-container input {
+  width: 50%;
+  padding: 0px 10px;
+
+}
+.filter-container button {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.names-container {
+  border: solid 2px grey;
+  border-radius: 8px;
+  padding: 10px;
+  width:80%;
+  margin:10px auto;
+}
+.myteam-container {
+  border: solid 2px grey;
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 0 10px 10px 10px;
+  width:80%;
+}
+
+@media (max-width:468px){
+  .filter-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .frontend-dev,
+  .backend-dev,
+  .all-button{
+    width:60%;
+  }
+  .filter-container input {
+    width:60%;
+  }
+  .names-container,.myteam-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
